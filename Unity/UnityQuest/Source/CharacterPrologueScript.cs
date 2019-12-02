@@ -18,7 +18,7 @@ public class Dialogue
 [System.Serializable]  //  MonoBehaviour가 아닌 스크립트를 인스펙터 상에 표시
 public class StringItem
 {
-    // 이미지 및 나타낼 대화를 인스펙터 상에서 입력イメージおよび表わす会話をインスペクター上で入力
+    // 이미지 및 나타낼 대화를 인스펙터 상에서 입력
     public Sprite UnityImage;
     public Sprite PartnerImage;
     public string UnityName;
@@ -74,7 +74,7 @@ public class CharacterPrologueScript : MonoBehaviour {
         if (!Button.activeSelf)
             Button.SetActive(true);
 
-        // 주고 받을 함수를 실행하고 대화 창을 제외한 나머지 UI를 비활성화 합니다.やり取りする関数を実行し、チャットウィンドウを除いた残りのUIを不活性化する
+        // 주고 받을 함수를 실행하고 대화 창을 제외한 나머지 UI를 비활성화 합니다.
         Bz();
         InactivationUI = GameObject.FindGameObjectsWithTag("PlayUI");
         SetInactivationUI(false);        // 특정 UI를 숨깁니다
